@@ -172,3 +172,56 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     height: 300px;
   }
 }
+/* What I Can Support */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 40px;
+  border: 1px solid var(--border);
+  background: var(--border);
+}
+
+.capability {
+  background: var(--bg);
+  padding: 32px;
+  min-height: 230px;
+}
+
+.capability span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 35px;
+}
+
+.capability h3 {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.capability p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tools-note {
+  max-width: 700px;
+  margin-top: 24px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability {
+    min-height: auto;
+  }
+}

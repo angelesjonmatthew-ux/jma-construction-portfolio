@@ -126,3 +126,8 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   .service-grid article:nth-child(odd), .service-grid article:nth-child(even) { border-right: 0; padding-left: 0; padding-right: 0; }
   .timeline-item { grid-template-columns: 1fr; gap: 8px; }
 }
+.timeline-item div > p:last-child {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+}

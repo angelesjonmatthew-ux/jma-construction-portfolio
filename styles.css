@@ -268,3 +268,44 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     gap: 35px;
   }
 }
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 320px;
+}
+
+.contact-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 0;
+  border-bottom: 1px solid #444;
+  color: #ddd;
+  transition: all 0.2s ease;
+}
+
+.contact-links a:first-child {
+  border-top: 1px solid #444;
+}
+
+.contact-links a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.contact-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777;
+}
+
+.contact-value {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.contact-links a:hover .contact-value {
+  color: #fff;
+}

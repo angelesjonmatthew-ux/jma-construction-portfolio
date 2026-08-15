@@ -225,3 +225,33 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     min-height: auto;
   }
 }
+.cv-section {
+  text-align: center;
+}
+
+.cv-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cv-content h2 {
+  margin-bottom: 15px;
+}
+
+.cv-content p {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+}

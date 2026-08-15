@@ -408,5 +408,19 @@
     <span>© 2026 Jon Matthew Angeles</span>
     <span>Civil Engineer · Construction Estimator</span>
   </footer>
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("mobile-open");
+  });
+
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("mobile-open");
+    });
+  });
+</script>
 </body>
 </html>

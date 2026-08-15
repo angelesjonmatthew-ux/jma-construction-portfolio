@@ -309,3 +309,81 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
 .contact-links a:hover .contact-value {
   color: #fff;
 }
+/* Mobile refinements */
+@media (max-width: 700px) {
+  .hero {
+    padding: 70px 7vw;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: clamp(44px, 13vw, 68px);
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-card {
+    min-height: 340px;
+    padding: 26px;
+    box-shadow: 14px 14px 0 #d4d4d0;
+  }
+
+  .section {
+    padding: 75px 7vw;
+    gap: 28px;
+  }
+
+  .section-label {
+    margin-bottom: 0;
+  }
+
+  .portfolio-head {
+    gap: 20px;
+  }
+
+  .project-image {
+    height: 280px;
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+
+  .capability {
+    padding: 26px;
+  }
+
+  .cv-section .section-content {
+    max-width: 100%;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact {
+    padding: 75px 7vw;
+  }
+
+  .contact-links {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-value {
+    overflow-wrap: anywhere;
+  }
+}

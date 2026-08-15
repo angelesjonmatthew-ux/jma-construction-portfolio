@@ -387,3 +387,30 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     overflow-wrap: anywhere;
   }
 }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--black);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    position: sticky;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav nav {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}

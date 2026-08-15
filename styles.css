@@ -131,3 +131,44 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   text-justify: inter-word;
   line-height: 1.7;
 }
+/* Portfolio image sizing */
+.project-image {
+  height: 360px;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  display: block;
+  background: #f2f2f2;
+}
+@media (max-width: 700px) {
+  .project-image {
+    height: 300px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery img {
+    height: 300px;
+  }
+}

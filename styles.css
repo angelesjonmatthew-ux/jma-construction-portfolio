@@ -414,3 +414,32 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     display: none;
   }
 }
+@media (max-width: 900px) {
+  .nav {
+    position: sticky;
+  }
+
+  .nav nav.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 7vw 18px;
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav nav.mobile-open a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+  }
+
+  .nav nav.mobile-open a:last-child {
+    border-bottom: 0;
+  }
+}

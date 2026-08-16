@@ -1516,3 +1516,24 @@ section.contact .eyebrow {
     height: 64px;
   }
 }
+/* Keep estimating projects aligned in one row */
+.portfolio .project-grid {
+  align-items: start;
+}
+
+.portfolio .project {
+  min-width: 0;
+  height: 100%;
+}
+
+.portfolio .project-image {
+  height: 300px;
+}
+
+.portfolio .project-info {
+  min-height: 250px;
+}
+
+.portfolio .project-gallery-primary {
+  position: absolute;
+}

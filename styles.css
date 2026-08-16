@@ -507,14 +507,18 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   position: absolute;
   bottom: 12px;
   right: 12px;
-  padding: 6px 9px;
-  background: rgba(17, 17, 17, 0.85);
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: #111;
   color: #fff;
-  font-size: 9px;
+  font-size: 10px;
+  line-height: 1;
   letter-spacing: 0.8px;
   font-weight: 600;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 0.2s ease;
+  z-index: 2;
 }
 
 .project-image a:hover .image-hint {

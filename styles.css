@@ -1444,3 +1444,75 @@ section.contact .eyebrow {
     margin-top: 35px;
   }
 }
+/* =========================================
+   PROJECT IMAGE + SUPPORTING THUMBNAILS
+========================================= */
+
+.project-image-with-gallery {
+  position: relative;
+}
+
+.project-image-with-gallery > a:first-child {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-gallery-primary {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 4;
+
+  display: flex;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.project-gallery-primary a {
+  display: block;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid #ffffff;
+  background: #f2f2f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-gallery-primary img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #f2f2f2;
+}
+
+.project-gallery-primary a:hover {
+  transform: translateY(-3px);
+}
+
+/* Make sure project descriptions start at the same height */
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info {
+  flex: 1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .project-gallery-primary {
+    left: 10px;
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .project-gallery-primary a {
+    width: 64px;
+    height: 64px;
+  }
+}

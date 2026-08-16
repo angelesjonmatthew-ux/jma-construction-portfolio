@@ -1551,10 +1551,6 @@ section.contact .eyebrow {
     line-height: 1.75;
   }
 }
-/* =========================================
-   SECTION SCROLL SNAP — NO FORCED HEIGHT
-========================================= */
-
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
@@ -1569,7 +1565,6 @@ main > section {
   scroll-snap-stop: normal;
 }
 
-/* Keep sections naturally sized */
 #home,
 #about,
 #services,
@@ -1580,13 +1575,11 @@ main > section {
   min-height: unset;
 }
 
-/* Tools and support sections also remain content-sized */
 .capabilities,
 .tools {
   min-height: unset;
 }
 
-/* Mobile */
 @media (max-width: 700px) {
   html {
     scroll-snap-type: none;

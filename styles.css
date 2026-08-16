@@ -1551,37 +1551,3 @@ section.contact .eyebrow {
     line-height: 1.75;
   }
 }
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-main > section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
-
-#home,
-#about,
-#services,
-#portfolio,
-#experience,
-#cv,
-#contact {
-  min-height: unset;
-}
-
-.capabilities,
-.tools {
-  min-height: unset;
-}
-
-@media (max-width: 700px) {
-  html {
-    scroll-snap-type: none;
-  }
-}

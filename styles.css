@@ -1237,8 +1237,8 @@ section.contact .eyebrow {
 
 .service-card {
   position: relative;
-  min-height: 245px;
-  padding: 30px 32px 32px;
+  min-height: 215px;
+  padding: 26px 28px 28px;
   background: #f8f8f6;
   overflow: hidden;
   display: flex;
@@ -1268,9 +1268,9 @@ section.contact .eyebrow {
   content: attr(data-number);
   position: absolute;
   right: 18px;
-  bottom: -20px;
+  bottom: -12px;
   font-family: "Manrope", sans-serif;
-  font-size: 130px;
+  font-size: 95px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -8px;
@@ -1343,41 +1343,22 @@ section.contact .eyebrow {
 }
 
 /* Hover */
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
 .service-card:hover {
-  background: #111;
-  color: #fff;
-}
-
-.service-card:hover::before {
-  opacity: 0.08;
-  background:
-    linear-gradient(to right, transparent 49.5%, #777 49.5%, #777 50.5%, transparent 50.5%),
-    linear-gradient(to bottom, transparent 49.5%, #777 49.5%, #777 50.5%, transparent 50.5%);
-}
-
-.service-card:hover::after {
-  color: #1d1d1d;
-}
-
-.service-card:hover .service-number {
-  color: #888;
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .service-card:hover .service-icon {
-  border-color: #555;
-  background: #191919;
+  border-color: #111;
 }
 
-.service-card:hover .service-icon svg {
-  stroke: #fff;
-}
-
-.service-card:hover h3::before {
-  background: #fff;
-}
-
-.service-card:hover p {
-  color: #aaa;
+.service-card:hover::after {
+  color: #deded9;
 }
 
 /* Mobile */

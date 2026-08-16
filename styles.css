@@ -454,3 +454,17 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   color: #222;
   font-weight: 700;
 }
+.project-image a,
+.project-gallery a {
+  display: block;
+}
+
+.project-image img,
+.project-gallery img {
+  transition: transform 0.25s ease;
+}
+
+.project-image a:hover img,
+.project-gallery a:hover img {
+  transform: scale(1.02);
+}

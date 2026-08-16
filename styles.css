@@ -943,3 +943,24 @@ section.contact .contact-links a {
   color: #dddddd !important;
   border-color: #444444 !important;
 }
+/* Final section backgrounds */
+section.tools {
+  background-color: #f1f1ef !important;
+}
+
+section.contact {
+  background-color: #0b0b0b !important;
+  color: #ffffff !important;
+}
+
+section.contact h2 {
+  color: #ffffff !important;
+}
+
+section.contact > div:first-child p:last-child {
+  color: #aaaaaa !important;
+}
+
+section.contact .eyebrow {
+  color: #888888 !important;
+}

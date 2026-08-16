@@ -1221,3 +1221,95 @@ section.contact .eyebrow {
   line-height: 1.7;
   color: #666;
 }
+
+/* =========================
+   CAPABILITIES — VISUAL CARDS
+========================= */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.service-card {
+  position: relative;
+  min-height: 260px;
+  padding: 30px;
+  background: #f8f8f6;
+  overflow: hidden;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  right: -35px;
+  bottom: -35px;
+  border: 1px solid #d4d4d0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.service-card:hover {
+  background: #ffffff;
+}
+
+.service-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.service-number {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.service-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfcfca;
+}
+
+.service-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #111;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card h3 {
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+
+.service-card p {
+  max-width: 430px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 230px;
+  }
+}

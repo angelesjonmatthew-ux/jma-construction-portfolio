@@ -1537,3 +1537,9 @@ section.contact .eyebrow {
 .portfolio .project-gallery-primary {
   position: absolute;
 }
+/* Justify project descriptions */
+.project-info > p:first-of-type {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+}

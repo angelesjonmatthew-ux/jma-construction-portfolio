@@ -872,3 +872,42 @@ footer {
   }
 }
 ```
+/* =========================
+   CONTACT FINAL OVERRIDE
+========================= */
+
+section.contact {
+  background-color: #0b0b0b !important;
+  color: #ffffff !important;
+  border-top: 0 !important;
+}
+
+section.contact h2 {
+  color: #ffffff !important;
+}
+
+section.contact > div:first-child p:last-child {
+  color: #aaaaaa !important;
+}
+
+section.contact .eyebrow {
+  color: #888888 !important;
+}
+
+section.contact .contact-links a {
+  color: #dddddd !important;
+  border-color: #444444 !important;
+}
+
+section.contact .contact-label {
+  color: #777777 !important;
+}
+
+section.contact .contact-value {
+  color: #dddddd !important;
+}
+
+section.contact .contact-links a:hover,
+section.contact .contact-links a:hover .contact-value {
+  color: #ffffff !important;
+}

@@ -1552,12 +1552,12 @@ section.contact .eyebrow {
   }
 }
 /* =========================================
-   FULL-PAGE SECTION SCROLL
+   SECTION SCROLL SNAP — NO FORCED HEIGHT
 ========================================= */
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -1566,32 +1566,29 @@ body {
 
 main > section {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
-  min-height: 100svh;
+  scroll-snap-stop: normal;
 }
 
-/* Hero */
-#home {
-  scroll-snap-align: start;
+/* Keep sections naturally sized */
+#home,
+#about,
+#services,
+#portfolio,
+#experience,
+#cv,
+#contact {
+  min-height: unset;
 }
 
-/* Footer should not interrupt the section flow */
-footer {
-  scroll-snap-align: start;
+/* Tools and support sections also remain content-sized */
+.capabilities,
+.tools {
+  min-height: unset;
 }
 
-/* Mobile: allow natural scrolling for longer sections */
+/* Mobile */
 @media (max-width: 700px) {
   html {
-    scroll-snap-type: y proximity;
-  }
-
-  main > section {
-    min-height: auto;
-    scroll-snap-stop: normal;
-  }
-
-  #home {
-    min-height: auto;
+    scroll-snap-type: none;
   }
 }

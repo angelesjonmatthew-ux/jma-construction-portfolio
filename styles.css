@@ -964,3 +964,49 @@ section.contact > div:first-child p:last-child {
 section.contact .eyebrow {
   color: #888888 !important;
 }
+/* Header visual contrast */
+.nav {
+  background: #f1f1ef;
+  border-bottom: 1px solid #d0d0cc;
+}
+
+.nav nav a {
+  color: #222;
+}
+
+.nav nav a:hover {
+  color: #777;
+}
+/* Hero background */
+.hero {
+  background: #f1f1ef;
+}
+/* Hero buttons */
+.buttons .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.buttons .button-dark {
+  background-color: #0b0b0b !important;
+  color: #ffffff !important;
+  border: 1px solid #0b0b0b !important;
+}
+
+.buttons .button-light {
+  background-color: transparent;
+  color: #0b0b0b;
+  border: 1px solid #0b0b0b;
+}
+
+.buttons .button-dark:hover {
+  background-color: #333 !important;
+}
+
+.buttons .button-light:hover {
+  background-color: #0b0b0b;
+  color: #ffffff;
+}

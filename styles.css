@@ -1388,8 +1388,35 @@ section.contact .eyebrow {
     margin: 0 auto;
   }
 }
-/* Portfolio project layout */
+/* =========================
+   PORTFOLIO FINAL LAYOUT
+========================= */
+
+.portfolio {
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 4vw;
+}
+
+.portfolio-head {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+}
+
+.portfolio-head h2 {
+  margin: 0;
+}
+
+.portfolio-head p {
+  max-width: 500px;
+  margin: 0;
+}
+
 .portfolio .project-grid {
+  grid-column: 2;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
@@ -1397,13 +1424,19 @@ section.contact .eyebrow {
 }
 
 @media (max-width: 700px) {
-  .portfolio .project-grid {
+  .portfolio {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
-}
 
-/* Give Portfolio more horizontal room */
-.portfolio {
-  grid-template-columns: 150px 1fr;
-  gap: 4vw;
+  .portfolio-head {
+    grid-column: 1;
+    display: block;
+  }
+
+  .portfolio .project-grid {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
 }

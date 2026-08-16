@@ -1551,3 +1551,47 @@ section.contact .eyebrow {
     line-height: 1.75;
   }
 }
+/* =========================================
+   FULL-PAGE SECTION SCROLL
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100svh;
+}
+
+/* Hero */
+#home {
+  scroll-snap-align: start;
+}
+
+/* Footer should not interrupt the section flow */
+footer {
+  scroll-snap-align: start;
+}
+
+/* Mobile: allow natural scrolling for longer sections */
+@media (max-width: 700px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  main > section {
+    min-height: auto;
+    scroll-snap-stop: normal;
+  }
+
+  #home {
+    min-height: auto;
+  }
+}

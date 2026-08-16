@@ -1019,3 +1019,28 @@ section.contact .eyebrow {
 .hero-text {
   margin-bottom: 22px;
 }
+/* Navigation refinement */
+.nav {
+  border-bottom: 1px solid #cfcfca;
+}
+
+.nav nav a {
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.nav nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #0b0b0b;
+  transition: width 0.2s ease;
+}
+
+.nav nav a:hover::after {
+  width: 100%;
+}

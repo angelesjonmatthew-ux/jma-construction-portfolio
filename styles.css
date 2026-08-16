@@ -1044,3 +1044,22 @@ section.contact .eyebrow {
 .nav nav a:hover::after {
   width: 100%;
 }
+/* Hero profile */
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero-profile strong {
+  display: block;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
+.hero-profile span {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+}

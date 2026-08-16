@@ -443,3 +443,14 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
     border-bottom: 0;
   }
 }
+.project-scope {
+  margin-top: 14px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.project-scope strong {
+  color: #222;
+  font-weight: 700;
+}

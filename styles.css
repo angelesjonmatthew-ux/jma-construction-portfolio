@@ -1728,3 +1728,173 @@ section.contact .eyebrow {
     font-size: 30px;
   }
 }
+/* =========================================
+   CV — VISUAL SECTION
+========================================= */
+
+.cv-section {
+  background: #ffffff;
+}
+
+.cv-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 70px;
+  align-items: center;
+  width: 100%;
+}
+
+.cv-copy {
+  max-width: 680px;
+}
+
+.cv-kicker {
+  margin-bottom: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.cv-copy h2 {
+  margin-bottom: 20px;
+}
+
+.cv-description {
+  max-width: 600px;
+  margin-bottom: 28px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* CV visual card */
+
+.cv-card {
+  position: relative;
+  min-height: 340px;
+  padding: 28px;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 16px 16px 0 #d4d4d0;
+}
+
+.cv-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background:
+    linear-gradient(to right, transparent 49.5%, #777 49.5%, #777 50.5%, transparent 50.5%),
+    linear-gradient(to bottom, transparent 49.5%, #777 49.5%, #777 50.5%, transparent 50.5%);
+  pointer-events: none;
+}
+
+.cv-card::after {
+  content: "CV";
+  position: absolute;
+  right: -15px;
+  bottom: -42px;
+  font-family: "Manrope", sans-serif;
+  font-size: 170px;
+  font-weight: 800;
+  line-height: 1;
+  color: #1b1b1b;
+  letter-spacing: -12px;
+  pointer-events: none;
+}
+
+.cv-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.cv-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.cv-card-main {
+  margin-top: 65px;
+}
+
+.cv-initials {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border: 1px solid #555;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cv-card-main h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.08;
+  letter-spacing: 0.5px;
+}
+
+.cv-card-main p {
+  margin: 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.cv-card-bottom {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.cv-card-bottom span {
+  padding: 5px 7px;
+  border: 1px solid #444;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #aaa;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .cv-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .cv-card {
+    width: min(360px, 100%);
+    justify-self: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .cv-card {
+    min-height: 320px;
+    padding: 24px;
+    box-shadow: 10px 10px 0 #d4d4d0;
+  }
+
+  .cv-card-main {
+    margin-top: 55px;
+  }
+
+  .cv-card-bottom {
+    left: 24px;
+    right: 24px;
+    bottom: 20px;
+  }
+}

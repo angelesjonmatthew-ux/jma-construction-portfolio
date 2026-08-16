@@ -454,9 +454,22 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   color: #222;
   font-weight: 700;
 }
-.project-image a,
-.project-gallery a {
+.project-image {
+  position: relative;
+}
+
+.project-image a {
+  position: relative;
   display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-gallery a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .project-image img,
@@ -468,43 +481,16 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
 .project-gallery a:hover img {
   transform: scale(1.02);
 }
-.project-scope {
-  margin-top: 14px;
-  color: #555;
-  font-size: 12px;
-  line-height: 1.6;
-}
 
-.project-scope strong {
-  color: #222;
-  font-weight: 700;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 18px;
-}
-
-.project-tags span {
-  border: 1px solid var(--line);
-  padding: 6px 9px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #666;
-  background: #fff;
-}
 .project-image .image-hint {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  display: inline-block;
+  display: block;
   padding: 7px 10px;
   border: 0;
-  background: #111;
-  color: #fff;
+  background: #111 !important;
+  color: #fff !important;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
   line-height: 1;
@@ -513,7 +499,7 @@ footer { background: #080808; color: #666; padding: 24px 10vw; display: flex; ju
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.2s ease;
-  z-index: 5;
+  z-index: 10;
 }
 
 .project-image a:hover .image-hint {

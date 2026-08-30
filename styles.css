@@ -432,6 +432,8 @@ h1 span {
 
 /* Portfolio sub-sections (Others/Local, Mock-up) */
 .portfolio-subsection {
+  grid-column: 1 / -1;
+  width: 100%;
   margin-top: 55px;
 }
 

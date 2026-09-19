@@ -2117,3 +2117,13 @@ section.contact .eyebrow {
     width: 100%;
   }
 }
+body {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+    url("jma-logo-1.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

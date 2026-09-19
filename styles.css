@@ -2118,23 +2118,62 @@ section.contact .eyebrow {
   }
 }
 body {
-  background-image: 
-    linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+  background: transparent;
+}
+
+body {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
+    ),
     url("jma-logo-1.png");
 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-/* Mobile */
-@media (max-width: 768px) {
-  body::before {
-    background-size: auto 70%;
-    background-position: center top;
-  }
+  /* Prevent the logo from becoming enormous */
+  background-size: auto, 520px auto;
 
-  body::after {
-    background: rgba(255, 255, 255, 0.94);
+  /* Center the logo in the viewport */
+  background-position: center, center;
+
+  /* Keep the logo frozen while scrolling */
+  background-attachment: fixed, fixed;
+
+  background-repeat: no-repeat, no-repeat;
+}
+
+/* =========================================
+   LIGHT SECTIONS
+   Allow the logo to show through
+========================================= */
+
+.hero,
+.services,
+.portfolio,
+.capabilities,
+.tools,
+.cv-section {
+  background-color: transparent !important;
+}
+
+/* =========================================
+   DARK SECTIONS
+   Hide the watermark
+========================================= */
+
+.experience,
+.contact,
+footer {
+  background-color: #0b0b0b !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  body {
+    background-size: auto, 280px auto;
+    background-position: center, center;
+    background-attachment: fixed, fixed;
   }
 }

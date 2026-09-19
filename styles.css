@@ -2117,60 +2117,16 @@ section.contact .eyebrow {
     width: 100%;
   }
 }
-<style>
-/* =========================================
-   FIXED BACKGROUND IMAGE
-   ========================================= */
-
-html,
 body {
-  min-height: 100%;
-}
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+    url("jma-logo-1.png");
 
-body {
-  position: relative;
-}
-
-/* Fixed background */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-
-  background-image: url("jm-logo-1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
-
-  pointer-events: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-/* Light overlay */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-
-  background: rgba(255, 255, 255, 0.92);
-
-  pointer-events: none;
-}
-
-/* Let the fixed background show through */
-.hero,
-.section,
-.about,
-.services,
-.portfolio,
-.experience,
-.capabilities,
-.cv-section,
-.tools {
-  background: transparent !important;
-}
-
 /* Mobile */
 @media (max-width: 768px) {
   body::before {
@@ -2182,4 +2138,3 @@ body::after {
     background: rgba(255, 255, 255, 0.94);
   }
 }
-</style>

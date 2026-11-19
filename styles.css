@@ -2203,18 +2203,7 @@ footer {
   }
 
 }
-/* =========================
-   PROJECT DESCRIPTION FORMATTING
-========================= */
 
-.project-description {
-  color: #666;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-top: 10px;
-}
 /* =========================
    FULL-SCREEN IMAGE VIEWER
 ========================= */

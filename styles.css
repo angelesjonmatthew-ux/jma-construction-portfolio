@@ -2234,9 +2234,12 @@ html.lightbox-open body {
 }
 
 /* "body > .lightbox" outranks the mobile "body > *" rule above */
-body > .lightbox {
+#lightbox {
   position: fixed;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 99999;
   display: flex;
   align-items: center;
@@ -2244,7 +2247,7 @@ body > .lightbox {
   background: rgba(0, 0, 0, 0.94);
 }
 
-body > .lightbox[hidden] {
+#lightbox[hidden] {
   display: none;
 }
 
